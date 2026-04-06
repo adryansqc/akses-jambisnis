@@ -1,6 +1,6 @@
  @php
      $favicon = App::make('settingItems')['favicon']->value ?? null;
-     $faviconUrl = $favicon ? Storage::url($favicon) : asset('assets/images/favicon.png');
+     $faviconUrl = $favicon ? Storage::url($favicon) : asset('/landingpage/img/LOGOJ.png');
  @endphp
 
  <a href="{{ route('filament.admin.pages.dashboard') }}" class="flex items-center space-x-1 p-2 rounded-lg animated-gradient transition min-w-[200px]">

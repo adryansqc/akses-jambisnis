@@ -45,7 +45,7 @@ class AdminPanelProvider extends PanelProvider
             })
             ->favicon(function () {
                 $favicon = App::make('settingItems')['favicon']->value ?? null;
-                $faviconUrl = $favicon ? Storage::url($favicon) : asset('assets/images/favicon.png');
+                $faviconUrl = $favicon ? Storage::url($favicon) : asset('/landingpage/img/LOGOJ.png');
                 return $faviconUrl;
             })
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
@@ -53,7 +53,7 @@ class AdminPanelProvider extends PanelProvider
             ->pages([
                 Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
+            // ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
                 AccountWidget::class,
                 // FilamentInfoWidget::class,

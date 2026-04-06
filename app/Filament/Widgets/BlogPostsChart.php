@@ -11,7 +11,7 @@ class BlogPostsChart extends ChartWidget
 
     protected ?string $heading  = 'Blog Posts Chart';
     protected static ?int $sort = 2;
-    // protected int | string | array $columnSpan = 'full'; 
+    // protected int | string | array $columnSpan = 'full';
 
     protected function getData(): array
     {
